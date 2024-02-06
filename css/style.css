@@ -1,0 +1,123 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Home section start */
+header
+{
+    width: 100%;
+    min-height: 70vh;
+    background-color: rgb(247, 246, 245);
+    display: flex;
+    position: relative;
+}
+/* Navigation section start */
+header .main
+{
+    width: 100%;
+    height: 8vh;
+    position: absolute;
+    display: flex;
+    top: 0;
+    background-color: white;
+    align-items: center;
+    font-size: larger;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+}
+header .main ul
+{
+    position: absolute;
+    right: 5%;
+    list-style: none;
+}
+header .main ul li
+{
+    display: inline;
+}
+header .main ul li a
+{
+    text-decoration: none;
+    margin-right: 1vw;
+    padding: 1vh;
+    color: black;
+    
+}
+header .main ul li a:hover
+{
+    border-right: 2px solid red;
+    border-left: 2px solid red;
+}
+header .main p
+{
+    position: absolute;
+    left: 5%;     
+}
+header .main p a
+{
+    text-decoration: none;
+    color: #000;
+}
+header .main p a:hover
+{
+    color: orange;
+}
+/* Navigation section end */
+
+
+/* header body start */
+
+header .body
+{
+    position: relative;
+    width: 100%;
+    left: 0;
+    top: 8vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 90%;
+    grid-template-areas: "l1 l2";
+}
+header .body .right-section
+{
+    grid-area: l1;
+    background-color: aqua;
+    border: 1px solid #000;
+}
+header .body .left-section
+{
+    grid-area: l2;
+    background-color: yellow;
+    border: 1px solid #000;
+}
+@media only screen and (max-width:768px) {
+    header .body
+{
+    position: relative;
+    width: 100%;
+    left: 0;
+    top: 8vh;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 90% 90%;
+    grid-template-areas: "l1"
+                         "l2";
+}
+header .body .right-section
+{
+    grid-area: l1;
+    background-color: aqua;
+    border: 1px solid #000;
+}
+header .body .left-section
+{
+    grid-area: l2;
+    background-color: yellow;
+    border: 1px solid #000;
+}
+    
+}
+
