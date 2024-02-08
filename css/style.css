@@ -150,7 +150,7 @@ header .header-body
     width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 80vh;
+    grid-template-rows: 100vh;
     grid-template-areas: "l1 l2";
 }
 header .header-body .right-section
@@ -169,19 +169,19 @@ header .header-body .left-section
     width: 100%;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 80vh 80vh ;
+    grid-template-rows: 60vh 60vh ;
     grid-template-areas: "l2"
                          "l1";
 }
 header .header-body .right-section
 {
     grid-area: l1;
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
 }
 header .header-body .left-section
 {
     grid-area: l2;
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
 }
     
 }
@@ -307,3 +307,73 @@ header .header-body .left-section
 
 /* header body ends */
 
+/* About me section start */
+.body-about
+{
+    width: 100%;
+    min-height: 70vh;
+    /* background: hotpink; */
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 100vh;
+    grid-template-areas: "l11 l22";
+    font-family: 'Times New Roman', Times, serif;
+}
+.body-about .right-section
+{
+    grid-area: l11;
+    border: 1px solid #000;
+    display: flex;
+    position: relative;
+}
+.body-about .left-section
+{
+    grid-area: l22;
+    border: 1px solid #000;
+    display: flex;
+    position: relative;
+}
+.body-about .left-section h1{
+    position: absolute;
+    top: 1%;
+    left: 0;
+    font-size: 2.5rem;
+}
+
+.body-about .left-section .content
+{
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #000;
+}
+
+@media only screen and (max-width:840px) {
+    .body-about
+{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows:  60vh  60vh ;
+    grid-template-areas: "l11"
+                         "l22";
+}
+.body-about .left-section h1{
+    position: absolute;
+    top: 0;
+    left: auto;
+}
+.body-about .right-section
+{
+    grid-area: l11;
+    /* border: 1px solid #000; */
+}
+.body-about .left-section
+{
+    grid-area: l22;
+    display: flex;
+    position: relative;
+
+    /* border: 1px solid #000; */
+}
+}
+/* About me section end */
