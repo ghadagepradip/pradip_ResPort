@@ -509,3 +509,69 @@ header .header-body .left-section
 }
 
   /* Education section ends */
+
+
+  /* project section ends */
+  .project
+  {
+    min-height: 70vh;
+    background-image: linear-gradient(45deg, #1F1C2C, #928DAB);
+    margin-bottom: 100px;
+    
+  }
+  .project h1
+  {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: rgb(228, 228, 228);
+    text-align: center;
+  }
+ .container
+  {
+    width: 80%;
+    margin: auto;
+    padding: 1.2% 0;
+    background-color: #1F1C2C   ;
+  }
+  .project-tab{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(2 ,1fr);
+    text-align: center;
+    justify-content: center;
+
+  }
+  .project-tab .tab{
+    /* border: 1px solid #000; */
+    /* background-color: #746f89; */
+    border-radius: 10%;
+    padding: 3%;
+    align-items: center;
+    justify-content: center;
+  }
+  .project-tab .tab:hover{
+    box-shadow: 0px 7px 7px white;
+   
+  }
+  .project-tab .tab img{
+    width: 85%;
+    height: 85%;
+    border-radius: 10%;
+    transition: 1s;
+  }
+  .project-tab .tab img:hover{
+    transform: scale(1.1);
+    /* transform: translatey(10px); */
+  }
+  .project-tab .tab h2{
+    color: rgb(177, 169, 235);
+    font-size: 1.4rem;
+  }
+  @media screen and (max-width: 600px) {
+  .project-tab{
+    grid-template-columns: repeat(1 ,1fr);
+  }
+}
+  /* project section ends */
